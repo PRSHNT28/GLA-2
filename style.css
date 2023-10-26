@@ -1,0 +1,64 @@
+/* Define custom properties for width and height based on viewport width */
+:root {
+  --width: calc(97vw / 17);
+  --height: calc(97vw / 17);
+}
+
+/* Apply width and height from custom properties to all div elements */
+div {
+  width: var(--width);
+  height: var(--height);
+  box-sizing: border-box;
+}
+
+/* Styling for the div with ID "TopDiv1" */
+#TopDiv1 {
+  width: 900px;
+  height: 120px;
+  margin: 0;
+  background-color: #008000; /* Green background color */
+  color: red; /* Blue text color */
+}
+
+/* Styling for all <p> elements */
+p {
+  color: #4aece1; /* Light blue text color */
+}
+
+/* Styling for the div with ID "TopDiv2" */
+#TopDiv2 {
+  border-style: solid;
+  background-color: #ff0000; /* Red background color */
+  color: #0000ff; /* Blue text color */
+  border-width: 4px;
+  border-color: #000000; /* Black border color */
+  padding: 0px 0px 60px 0px; /* Padding values: top, right, bottom, left */
+}
+
+/* Styling for the div with ID "MidDiv1" */
+#MidDiv1 {
+  margin-left: var(--width);
+  margin-top: calc(var(--height) * 0);
+  padding: 0px 0px 100px 10px;
+  border-style: solid;
+  width: calc(var(--width) * 2);
+  height: calc(var(--height) * 2);
+  background-color: #008000; /* Green background color */
+  color: #ff2200; /* Blue text color */
+  border-width: 8px;
+  border-color: #ffc0cb; /* Pink border color */
+}
+
+/* Styling for the div with ID "BottomDiv1" */
+#BottomDiv1 {
+  margin-left: calc(var(--width) * 3);
+  margin-bottom: var(--height);
+  padding: 10px 0px 100px 30px;
+  border-style: solid;
+  width: calc(var(--width) * 4);
+  height: calc(var(--height) * 4);
+  background-color: #0000ff; /* Blue background color */
+  color: #008000; /* Green text color */
+  border-width: 16px;
+  border-color: #ff00ff; /* Magenta border color */
+}
